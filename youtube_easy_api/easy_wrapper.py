@@ -55,7 +55,7 @@ class YoutubeEasyWrapper:
         results = self.service.search().list(**kwargs).execute()
 
         current_page = 0
-        max_pages = 3
+        max_pages = 1
         while results and current_page < max_pages:
             items.extend(results['items'])
 
